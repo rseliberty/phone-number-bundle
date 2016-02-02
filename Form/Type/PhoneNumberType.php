@@ -91,7 +91,7 @@ class PhoneNumberType extends AbstractType
 
             $countryOptions['required'] = true;
             $countryOptions['choices'] = $countryChoices;
-            $countryOptions['preferred_choices'] = $options['preferred_country_choices'];
+            $countryOptions['preferred_choices'] = ['FR','GB']; //$options['preferred_country_choices'];
 
             $builder
                 ->add('country', $choiceType, $countryOptions)
